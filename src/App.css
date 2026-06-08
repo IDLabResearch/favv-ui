@@ -69,6 +69,43 @@
   color: #314558;
 }
 
+.view-tabs {
+  display: inline-flex;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(161, 181, 210, 0.35);
+  border-radius: 0.65rem;
+  padding: 0.3rem;
+}
+
+.view-tab {
+  border: 0;
+  background: transparent;
+  color: #28506a;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.view-tab:hover {
+  background: rgba(50, 154, 217, 0.16);
+}
+
+.view-tab--active {
+  background: #329ad9;
+  color: #ffffff;
+}
+
+.view-tab:focus-visible {
+  outline: 2px solid #329ad9;
+  outline-offset: 2px;
+}
+
 .search-wrap {
   display: block;
 }
@@ -103,6 +140,88 @@
   margin-bottom: 0.9rem;
   color: #234562;
   font-weight: 600;
+}
+
+.stream-section {
+  margin-top: 1.2rem;
+}
+
+.stream-meta {
+  margin-bottom: 0.85rem;
+}
+
+.stream-meta h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1b455f;
+}
+
+.stream-meta p {
+  margin: 0.45rem 0 0;
+  color: #2f607f;
+}
+
+.stream-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.stream-item {
+  background: #ffffff;
+  border: 1px solid #cde2f1;
+  border-radius: 0.85rem;
+  padding: 0.85rem 0.95rem;
+  box-shadow: 0 8px 20px rgba(20, 58, 86, 0.08);
+}
+
+.stream-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.55rem;
+}
+
+.stream-item-top time {
+  color: #5c7790;
+  font-size: 0.82rem;
+}
+
+.stream-entity-name {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #11324a;
+}
+
+.stream-provider-id {
+  margin: 0 0 0.55rem;
+  color: #2a6489;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.stream-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+}
+
+.stream-badge--status {
+  color: #1a5276;
+  background: #dff1fb;
+}
+
+.stream-item p {
+  margin: 0.3rem 0;
+  color: #27465e;
+  font-size: 0.9rem;
 }
 
 .results-grid {
